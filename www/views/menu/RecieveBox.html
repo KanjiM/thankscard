@@ -1,0 +1,12 @@
+<ons-page class="RecieveBoxPage" ng-controller="RecieveBoxController as rbl" ons-init="rbl.init($event)">
+    <header data-role="header">
+    <p>受信履歴</p>
+    </header>
+        <div>
+            <ons-list>
+                <ons-list-item class="recieveList" ng-repeat="data in recieveData" ng-click="rLinkClick(data)">
+                    {{data.name}}<span>{{data.recieveTime}}</span>
+                </ons-list-item>
+            </ons-list>
+        </div>
+</ons-page>

@@ -1,0 +1,31 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="center">ログイン</div>
+  </ons-toolbar>
+  <ons-list ng-controller="SettingController">
+    <ons-list-item ng-click="show('login.html')" modifier="tappable">
+      Login form
+    </ons-list-item>
+    <ons-list-item ng-click="navi.pushPage('views/login.html')" modifier="tappable">
+      testlogin
+    </ons-list-item>
+    <ons-button ng-click="navi.pushPage('views/login.html')">テスト</ons-button>
+  </ons-list>
+
+</ons-template>
+<ons-template id="login.html">
+  <ons-dialog var="dialog" cancelable>
+
+    <ons-toolbar inline>
+      <div class="center">
+        ログイン
+      </div>
+    </ons-toolbar>
+
+    <p><input placeholder="Username" id="username" class="text-input"></p>
+    <p><input type="password" placeholder="Password" id="username" class="text-input"></p>
+    <p><ons-button modifier="large" ng-click="dialog.hide()">Sign in</ons-button></p>
+
+  </ons-dialog>
+</ons-template>
+</ons-page>

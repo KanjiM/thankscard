@@ -1,0 +1,16 @@
+<ons-page class="RecieveContextPage" ng-controller="RecieveContextController as rcl" ons-init="rcl.init($event)">
+    <ons-back-button>戻る</ons-back-button>
+    <section>
+        <div class="thanksCard">
+            <!--<img src="img/thankscard/01.jpg" alt="" />-->
+            <img src="img/thankscard/{{rdata.cardNumber}}.jpg" alt="" />
+            <div class="context" style="">
+                <p>{{rdata.context}}</p>
+            </div>
+            <div class="from">
+                <p>{{rdata.name}}</p>
+            </div>
+        </div>
+    </section>
+    
+</ons-page>

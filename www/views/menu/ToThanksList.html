@@ -1,0 +1,14 @@
+<ons-page class="ToThanksListPage" ng-controller="ToThanksListController as ttl" ons-init="ttl.init($event)">
+    <div class="page__background" style="background-color:#fac090;">
+    </div>
+    <header data-role="header">
+        <p>誰に送りますか?</p>
+    </header>
+    <div>
+        <ons-list>
+            <ons-list-item ng-repeat="user in users" ng-click="linkClick(user)">
+                {{user.name}}
+            </ons-list-item>
+        </ons-list>
+    </div>
+</ons-page>

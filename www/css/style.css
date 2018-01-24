@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/*********** 共通 ***********/
+.backButton{
+    text-align: left;
+}
+.top{
+    font-size:40px;
+    margin-top:160px;
+	padding:10px 0;
+	text-align:center;
+}
+.top img{
+	width:80%;
+	margin-bottom:60px;
+}
+.top p{
+	color:#FFF;
+//	font-weight:bold;
+	margin:30px 60px;
+}
+.footer{
+	color:#FFF;
+	font-size:50px;
+	text-align:center;
+	margin-top:300px;
+}
+/**********index**********/
+.tabbarTop{
+    font-size: 25px;
+    text-align: center;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+back-button{
+    text-align:left;
+}
+
+/*********** ログイン ***********/
+.form{
+	text-align:center;
+	vertical-align:middle;
+}
+.form div{
+	margin-bottom:10px;
+}
+
+.form ::-webkit-input-placeholder{
+	color:#FFF;
+	font-weight:bold;
+	font-size:50px;
+	text-align:center;
+}
+.form input{
+	color:#FFF;
+	font-size:53px;
+	border:0;
+	background-color:transparent;
+	padding:40px 10px;
+	outline-color:#FFF;
+	margin-bottom:20px;
+}
+.form input:focus::-webkit-input-placeholder{
+}
+.form .user{
+	margin-top:20px;
+}
+.form .password{
+}
+.form .login{
+}
+.form .login input{
+	padding:40px 255px;
+}
+/*********ToThanksList***********/
+.ToThanksListPage{
+    background-color: black;
+}
+.ToThanksListPage p{
+    margin: 40px 0;
+}
+.ToThanksListPage ons-list{
+     width:320px;
+     height: 470px;
+     margin-left: 26px;
+     border: 2px solid #CCC;
+     overflow-y: scroll;
+}
+.ToThanksListPage ons-list-item{
+    font-size: 20px;
+}
+.ToThanksListPage ons-list img{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    margin-left: 230px;
+}
+/*********ChooseDesign***********/
+.designPageBody p{
+    text-align:center;
+	font-size:25px;
+    margin: 10px 0;
+}
+.designPageBody .designHeader{
+	text-align:center;
+}
+ons-back-button{
+    text-align:left;
+}
+.designPageBody .designHeader .randomDesignButton{
+	display: inline-block;
+	font-size:25px;
+	text-decoration: none;
+	background: #87befd;
+	color: #FFF;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px 5px #87befd;
+	border: dashed 1px #FFF;
+	transition: .4s;
+}
+.designPageBody .designHeader .randomDesignButton:active{
+	background: #668ad8;
+	box-shadow: 0px 0px 0px 5px #668ad8;
+}
+.designPageBody .chooseDesign{
+	margin-top:30px;
+	overflow-y:scroll;
+//	height:900px;
+}
+.designPageBody .chooseDesign input{
+	width:40%;
+	//margin:40px;
+    margin: 8px 8px;
+	background-color:white;
+	border:solid 2px #CCC;
+}
+
+/*********RecieveBox***********/
+.RecieveBoxPage p{
+    margin: 40px 0;
+}
+.RecieveBoxPage ons-list{
+     width:320px;
+     height: 470px;
+     margin-left: 26px;
+     border: 2px solid #CCC;
+     overflow-y: scroll;
+}
+.RecieveBoxPage ons-list-item{
+     font-size: 20px;
+     height: 50px;
+}
+.RecieveBoxPage span{
+    text-align: right;
+}
+/*********RecieveContext***********/
+.RecieveContextPage .thanksCard{
+}
+.RecieveContextPage .thanksCard img{
+    position: relative;
+    height:40%;
+    width:100%;
+    margin-top: 140px;
+}
+.RecieveContextPage .thanksCard .context p{
+    position: absolute;
+    top:270;
+    left: 30;
+    right: 30;
+    font-size: 18px;
+}
+.RecieveContextPage .thanksCard .from p{
+    position: absolute;
+    top:363;
+    left: 250;
+    font-size: 19px;
+}

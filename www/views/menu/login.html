@@ -1,0 +1,47 @@
+<ons-page>
+<ons-back-button>戻る</ons-back-button>
+<section style="margin:20px 60px;">
+		<div class="top">
+			<!--<p>Thanks<br>Card</p>-->
+			<img src="../img/top.png">
+			<div class="form" >
+				<div class="user">
+					<input type="text" placeholder="ユーザD" id="userIdPlaceColor">
+				</div>
+				<div class="password">
+					<input type="text" placeholder="パスワード" id="passwordPlaceColor">
+				</div>
+				<div class="login">
+					<input type="button" value="LOGIN" onclick="" id="loginButtonColor">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<p>NISCO THANKS CARD</p>
+	</footer>
+</ons-template>
+<script>
+	var colorNumber = Math.floor(Math.random() * 3);
+	var bgColorArray = new Array(
+		"#f2ecc8",
+		"#ea7ca9",
+		"#fac090"
+	);
+	var buttonColorArray = new Array(
+		"#4b6683",
+		"#902a5a",
+		"#c0504d"
+	);
+	// ?w?i?J???[
+	document.bgColor = bgColorArray[colorNumber];
+	//var borderBottom = "solid 10px " + bgColorArray[colorNumber];
+	//document.getElementById("userBottomColor").style.borderBottom  = borderBottom;
+	//document.getElementById("passwordBottomColor").style.borderBottom  = borderBottom;
+	////?{?^???J???[
+	document.getElementById("userIdPlaceColor").style.backgroundColor = buttonColorArray[colorNumber];
+	document.getElementById("passwordPlaceColor").style.backgroundColor = buttonColorArray[colorNumber];
+	document.getElementById("loginButtonColor").style.backgroundColor = buttonColorArray[colorNumber];
+
+</script>
+</ons-page>
